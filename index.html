@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>God's Time Travel Service | Holiday Shuttle</title>
+  <meta name="description" content="Reliable holiday shuttle from ABUAD to Akure Airport and Akure Park. Reserve your seat on WhatsApp.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-name">God's Time</span>
+      <span class="brand-sub">Travel Service</span>
+    </a>
+    <a class="btn btn-light" href="#reserve">Reserve a seat</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Holiday shuttle</p>
+      <h1>Next Stop: <span>HOME</span></h1>
+      <p class="lead">Your journey, our commitment. Reliable transport from campus back home this holiday.</p>
+      <a class="btn btn-primary" href="#reserve">Secure your seat today</a>
+      <ul class="chips">
+        <li>8 seats per trip</li>
+        <li>Reserve with a deposit</li>
+      </ul>
+    </section>
+
+    <section class="section" id="routes">
+      <h2>Routes &amp; prices</h2>
+      <div class="cards" id="route-cards"></div>
+    </section>
+
+    <section class="section" id="how">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>Pick your route</strong>Choose where you're going and your travel date.</li>
+        <li><strong>Hold your seat</strong>Send your details on WhatsApp and pay the deposit.</li>
+        <li><strong>Travel home</strong>Show up on departure day and ride safe.</li>
+      </ol>
+    </section>
+
+    <section class="section" id="reserve">
+      <h2>Reserve your seat</h2>
+      <form class="booking" id="booking">
+        <label>Your name
+          <input type="text" id="name" required>
+        </label>
+        <label>Route
+          <select id="route"></select>
+        </label>
+        <label>Number of seats
+          <input type="number" id="seats" min="1" max="8" value="1" required>
+        </label>
+        <label>Travel date
+          <input type="date" id="date" required>
+        </label>
+        <p class="total">Total: <span id="total"></span></p>
+        <button class="btn btn-dark" type="submit">Reserve on WhatsApp</button>
+        <p class="note">This opens WhatsApp with your details filled in. Your seat is confirmed once the deposit is paid.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>God's Time Travel Service · Call <a href="tel:+2347045551626">070 4555 1626</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
